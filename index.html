@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Aprendizaje: Flutter & Desarrollo Mobile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Diccionario Técnico: Flutter</h1>
+        <p>Conceptos clave para entender el ecosistema de desarrollo móvil de Google</p>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>📱 Desarrollo Mobile</h2>
+            <p>Es la creación de software diseñado para ejecutarse en dispositivos móviles (smartphones y tablets). El ecosistema se divide principalmente en dos enfoques:</p>
+            <ul>
+                <li><strong>Nativo:</strong> Desarrollar una app exclusiva para cada plataforma (Swift para iOS, Kotlin para Android).</li>
+                <li><strong>Multiplataforma (Cross-platform):</strong> Escribir un solo código base que se compila e instala en ambos sistemas operativos.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>🚀 ¿Qué es Flutter?</h2>
+            <p>Es un <strong>framework y kit de herramientas (UI Toolkit)</strong> creado por Google para construir aplicaciones compiladas nativamente para móvil, web y escritorio desde una única base de código.</p>
+            <p>A diferencia de competidores como React Native, Flutter no usa los componentes visuales del sistema operativo; posee su propio motor de renderizado gráfico (Impeller/Skia) para "dibujar" cada elemento en la pantalla en tiempo real.</p>
+        </section>
+
+        <section class="card">
+            <h2>🛠️ ¿Qué es un SDK?</h2>
+            <p>Significa <em>Software Development Kit</em> (Kit de Desarrollo de Software). Es el conjunto de herramientas que un programador necesita para construir aplicaciones para una plataforma específica.</p>
+            <p>El <strong>SDK de Flutter</strong> incluye el motor de renderizado, herramientas de línea de comandos (CLI), frameworks de pruebas, compiladores y una inmensa biblioteca de componentes de interfaz listos para usar.</p>
+        </section>
+
+        <section class="card">
+            <h2>🎯 Dart</h2>
+            <p>Es el <strong>lenguaje de programación</strong> cliente-optimizado en el que está escrito Flutter y el que debes usar para programar tus aplicaciones.</p>
+            <p>Destaca por combinar dos tipos de compilación: <strong>JIT (Just-In-Time)</strong> durante el desarrollo para permitir cambios instantáneos, y <strong>AOT (Ahead-Of-Time)</strong> para producción, que traduce el código directamente a lenguaje de máquina ultra rápido.</p>
+        </section>
+
+        <section class="card">
+            <h2>🧩 Widgets</h2>
+            <p>En el universo de Flutter, <strong>"Todo es un Widget"</strong>. Un widget es la unidad estructural básica de la interfaz de usuario.</p>
+            <p>No solo los elementos visibles (un botón o un texto) son widgets; también los elementos estructurales o de diseño (el padding, un alineado o el enrutamiento de pantallas) se declaran y manejan como widgets anidados en forma de árbol.</p>
+        </section>
+
+        <section class="card highlight-card">
+            <h2>⚖️ StatelessWidget vs StatefulWidget</h2>
+            <p>Es la distinción fundamental a la hora de estructurar componentes en base a si los datos (el estado) cambian o no en el tiempo:</p>
+            
+            <div class="sub-box">
+                <h3>StatelessWidget (Sin Estado)</h3>
+                <p>Son componentes pasivos e inmutables. Una vez creados con sus propiedades iniciales, no pueden cambiar por sí mismos en la pantalla. <em>Ejemplo: Un texto estático, un icono decorativo o un logo.</em></p>
+            </div>
+            
+            <div class="sub-box">
+                <h3>StatefulWidget (Con Estado)</h3>
+                <p>Son componentes dinámicos y reactivos. Pueden reconstruirse y actualizar su apariencia visual en tiempo real cuando el usuario interactúa o llegan nuevos datos. <em>Ejemplo: Un contador, una casilla de verificación o un formulario de login.</em></p>
+            </div>
+        </section>
+
+        <section class="card full-width">
+            <h2>⚡ Comandos Eficientes (CLI)</h2>
+            <p>Para trabajar de manera profesional con el SDK de Flutter, estos son los comandos imprescindibles en tu terminal de comandos:</p>
+            <div class="code-grid">
+                <div class="code-item"><code>flutter doctor</code> <span>Analiza tu entorno local e indica qué componentes o configuraciones faltan por instalar.</span></div>
+                <div class="code-item"><code>flutter create nombre_app</code> <span>Genera automáticamente la estructura de directorios y archivos de un nuevo proyecto limpio.</span></div>
+                <div class="code-item"><code>flutter run</code> <span>Compila, empaqueta y ejecuta la aplicación en un dispositivo físico conectado o emulador.</span></div>
+                <div class="code-item"><code>flutter clean</code> <span>Elimina la carpeta de compilación intermedios y la caché. Es la solución estándar cuando ocurren errores extraños de dependencias.</span></div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
